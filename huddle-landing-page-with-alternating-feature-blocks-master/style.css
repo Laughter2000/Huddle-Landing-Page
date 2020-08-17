@@ -1,0 +1,318 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+
+}
+.container {
+    margin: 0 auto;
+}
+section {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    text-align: left;
+    grid-area: logo;
+    margin-bottom: 50px;
+}
+header {
+    display: grid;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+    background: hsl(193, 100%, 96%) url("./images/bg-hero-mobile.svg") repeat ;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "logo . primary"
+    "h1 h1 h1"
+    "paragraph paragraph paragraph"
+    "secondary secondary secondary"
+    "mockup mockup mockup";
+    align-items: center;
+    gap: 40px;
+}
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    grid-area: h1;
+    color: hsl(192, 100%, 9%);
+}
+
+ header p {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    grid-area: paragraph;
+
+}
+.mockup {
+    width: 70%;
+    grid-area: mockup;
+    justify-self: center;
+
+}
+.btn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.secondary {
+    padding: 15px;
+    width: 300px;
+    background-color:hsl(322, 100%, 66%);
+    color: white;
+    grid-area: secondary;
+    justify-self: center;
+}
+.primary {
+    width: 150px;
+    padding: 10px;
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    grid-area: primary;
+    margin-bottom: 50px;
+}
+
+.illustration {
+    margin: 0 auto;
+    width: 90%;   
+    height: 40em;
+    display: grid;
+    background-color: white;
+    border-radius: 10px;
+    border-top: 1px inset hsl(208, 11%, 55%) ;
+    box-shadow: 0px 3px  3px hsl(208, 11%, 55%);
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "illustration"
+    "textarea";
+
+}
+.illustration img {
+    width: 80%;
+    grid-area: illustration;
+    justify-self: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    grid-area: h2
+}
+
+.illustration p {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: hsl(208, 11%, 55%);
+    grid-area: illus-p;
+    padding-top: 20px;
+}
+.content {
+    grid-area: textarea;
+}
+
+.cta h2 {
+    font-size: 18px;
+    padding-bottom: 30px;
+
+}
+.cta {
+    text-align: center;
+    width: 85%;
+    background-color: white;
+    border-radius: 10px;
+    border-top: 1px inset hsl(208, 11%, 55%) ;
+    box-shadow: 0px 3px  3px hsl(208, 11%, 55%);
+    padding: 30px 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+
+}
+.footer {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+    color: white;
+    background-color: hsl(192, 100%, 9%);
+}
+.footer-logo{
+    display: block;
+    clear: both;
+}
+
+.icons {
+    padding-left: 20px;
+}
+.location img {
+    display: block;
+}
+
+ul {
+    padding-left: 20px;
+    list-style: none;
+    line-height: 3;
+}
+
+i {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.copy {
+    text-align: center;
+}
+
+.footer img {
+    float: left;
+    margin-right: 20px;
+}
+.social-icon {
+    text-align: center;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 910px) {
+    header {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "logo . primary"
+        "h1 h1 mockup"
+        "paragraph paragraph mockup"
+        "secondary . mockup";
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+    }
+    h1 {
+        text-align: left;
+        padding: 30px;
+    }
+    .secondary {
+        margin-left: 30px;
+    }
+    .primary {
+        justify-self: flex-end;
+    }
+
+
+    .mockup {
+        width: 100%;
+        grid-area: mockup;
+        justify-self: center;
+    
+    }
+    .illustration {
+        margin: 0 auto;
+        width: 90%;   
+        height: 400px;
+        display: grid;
+        background-color: white;
+        border-radius: 10px;
+        border-top: 1px inset hsl(208, 11%, 55%) ;
+        box-shadow: 0px 3px  3px hsl(208, 11%, 55%);
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "textarea illustration"
+        "textarea illustration";
+        gap: 30px;
+
+    
+    }
+    .reverse {
+        margin: 0 auto;
+        width: 90%;   
+        height: 400px;
+        display: grid;
+        background-color: white;
+        border-radius: 10px;
+        border-top: 1px inset hsl(208, 11%, 55%) ;
+        box-shadow: 0px 3px  3px hsl(208, 11%, 55%);
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "illustration textarea"
+        "illustration textarea";
+        gap: 30px;
+    
+    }
+    .illustration img {
+        width: 90%;
+        grid-area: illustration;
+        justify-self: center;
+        align-self: center;
+    }
+    .content {
+        padding-top: 100px;
+        text-align: left;
+    }
+    .illustration p {
+        padding-top: 50px;
+    }
+
+    .cta {
+        text-align: center;
+        width: 500px;
+        background-color: white;
+        border-radius: 10px;
+        border-top: 1px inset hsl(208, 11%, 55%) ;
+        box-shadow: 0px 3px  3px hsl(208, 11%, 55%);
+        padding: 40px 10px;
+        margin: 0 auto;
+        position: relative;
+        top: 100px;
+    
+    }
+
+    .footer {
+        display: grid;
+        grid-template-areas: auto;
+        grid-template-areas: 
+        "icons first second social-icon"
+        ". . . copy";
+        gap: 50px;
+
+    }
+    .social-icon {
+        padding-top: 30px;
+        grid-area: social-icon;
+    }
+    .first {
+        grid-area: first;
+    }
+
+    .second {
+        grid-area: second;
+    }
+    .icons {
+        grid-area: icons;
+    }
+    .copy {
+        grid-area: copy;
+        padding: 50px;
+    }
+
+    
+}
