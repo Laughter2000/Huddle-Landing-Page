@@ -1,6 +1,10 @@
 html {
     box-sizing: border-box;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
 
@@ -287,6 +291,7 @@ i {
     }
 
     .footer {
+        font-size: 12px;
         display: grid;
         grid-template-areas: auto;
         grid-template-areas: 
